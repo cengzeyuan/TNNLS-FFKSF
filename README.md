@@ -41,6 +41,8 @@ FFK-SGC:                (file: ffksf_in_SGC)
 
 ```python citation.py --dataset cora --tuned --gamma 2 --K 7```
 
+If you are interested with the detail settings of hyperparameters, please refer to our paper. For FFK-GCNII and FFK-DAGNN, we strictly follow the settings of hyperparameters of GCNII and DAGNN respectively. Thus, we retain the run.sh file in the original implementation of GCNII and DAGNN.
+
 ## 4. The Codes of Original Models
 
 Thanks very much for the following implementations:
