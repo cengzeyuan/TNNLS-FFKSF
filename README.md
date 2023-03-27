@@ -19,7 +19,7 @@ Thank you for reading this far.
 
 ## 2. Usage
 
-Models built based on different libraries may have different performance. Therefore, we use the models the authors release. We retrain the README.md file of each project to help the readers get the corresponding requirements more convenient.
+Models built based on different libraries may have different performance. Therefore, we use the models the authors release. We retrain the original README.md file of each project to help the readers get the corresponding requirements more convenient.
 
 Limited by the size of file in github, we did not upload all the pretrained files of FFK-GCNII.
 
