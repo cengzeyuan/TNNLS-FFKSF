@@ -1,0 +1,11 @@
+nohup: ignoring input
+Namespace(dataset='CiteSeer', random_splits=False, runs=10, epochs=1000, lr=0.01, weight_decay=0.02, early_stopping=100, hidden=64, dropout=0.5, normalize_features=True, K=10, k=1, gamma=1.0, cuda=3, seed=42)
+dataset: CiteSeer()
+Data: Data(x=[3327, 3703], edge_index=[2, 9104], y=[3327], train_mask=[3327], val_mask=[3327], test_mask=[3327])
+  0%|          | 0/10 [00:00<?, ?run/s]/home/zengzeyuan/DeeperGNN-master-batch/DeeperGNN/train_eval.py:47: RuntimeWarning: divide by zero encountered in power
+  d_inv_sqrt = np.power(rowsum, -1).flatten()
+preprocessing time: 3.265891283750534
+ 10%|█         | 1/10 [00:22<03:22, 22.47s/run] 20%|██        | 2/10 [00:34<02:08, 16.07s/run] 30%|███       | 3/10 [00:45<01:37, 13.95s/run] 40%|████      | 4/10 [00:56<01:17, 12.93s/run] 50%|█████     | 5/10 [01:07<01:00, 12.11s/run] 60%|██████    | 6/10 [01:19<00:47, 11.91s/run] 70%|███████   | 7/10 [01:30<00:35, 11.93s/run] 80%|████████  | 8/10 [01:41<00:23, 11.55s/run] 90%|█████████ | 9/10 [01:53<00:11, 11.72s/run]100%|██████████| 10/10 [02:05<00:00, 11.55s/run]100%|██████████| 10/10 [02:05<00:00, 12.50s/run]
+order: 1.000,gamma: 1.000,Val Loss: 1.1513, Test Accuracy: 0.731 ± 0.004, Duration: 11.497
+Test Accuracy: 0.731 ± 0.004,Test pre: 0.695 ± 0.005,Test recall: 0.686 ± 0.006,Test f1: 0.683 ± 0.005, Duration: 11.497
+average total time: 0.249516386486694

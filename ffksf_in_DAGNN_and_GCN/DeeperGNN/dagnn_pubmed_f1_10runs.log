@@ -1,0 +1,9 @@
+nohup: ignoring input
+Namespace(dataset='PubMed', random_splits=False, runs=10, epochs=1000, lr=0.01, weight_decay=0.005, early_stopping=100, hidden=64, dropout=0.8, normalize_features=True, K=20, k=1, gamma=1.0, cuda=2, seed=42)
+dataset: PubMed()
+Data: Data(x=[19717, 500], edge_index=[2, 88648], y=[19717], train_mask=[19717], val_mask=[19717], test_mask=[19717])
+  0%|          | 0/10 [00:00<?, ?run/s]preprocessing time: 120.36454994231462
+ 10%|█         | 1/10 [02:19<20:54, 139.34s/run] 20%|██        | 2/10 [02:30<08:31, 63.95s/run]  30%|███       | 3/10 [02:41<04:38, 39.82s/run] 40%|████      | 4/10 [02:52<02:49, 28.21s/run] 50%|█████     | 5/10 [03:02<01:49, 21.92s/run] 60%|██████    | 6/10 [03:13<01:12, 18.05s/run] 70%|███████   | 7/10 [03:23<00:46, 15.61s/run] 80%|████████  | 8/10 [03:34<00:28, 14.08s/run] 90%|█████████ | 9/10 [03:45<00:13, 13.08s/run]100%|██████████| 10/10 [03:56<00:00, 12.32s/run]100%|██████████| 10/10 [03:56<00:00, 23.62s/run]
+order: 1.000,gamma: 1.000,Val Loss: 0.4905, Test Accuracy: 0.805 ± 0.003, Duration: 10.934
+Test Accuracy: 0.805 ± 0.003,Test pre: 0.794 ± 0.003,Test recall: 0.797 ± 0.006,Test f1: 0.795 ± 0.003, Duration: 10.934
+average total time: 0.4659187623558665

@@ -1,0 +1,7 @@
+nohup: ignoring input
+Namespace(dataset='Cora', random_splits=False, runs=10, epochs=1000, lr=0.01, weight_decay=0.005, early_stopping=100, hidden=64, dropout=0.8, normalize_features=True, K=10, k=6, gamma=2.0, cuda=1)
+dataset: Cora()
+Data: Data(x=[2708, 1433], edge_index=[2, 10556], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708])
+  0%|          | 0/10 [00:00<?, ?run/s] 10%|█         | 1/10 [00:38<05:50, 38.99s/run] 20%|██        | 2/10 [01:05<04:11, 31.49s/run] 30%|███       | 3/10 [01:31<03:24, 29.28s/run] 40%|████      | 4/10 [01:58<02:49, 28.23s/run] 50%|█████     | 5/10 [02:24<02:17, 27.48s/run] 60%|██████    | 6/10 [02:50<01:48, 27.05s/run] 70%|███████   | 7/10 [03:16<01:20, 26.69s/run] 80%|████████  | 8/10 [03:42<00:52, 26.48s/run] 90%|█████████ | 9/10 [04:09<00:26, 26.42s/run]100%|██████████| 10/10 [04:35<00:00, 26.52s/run]100%|██████████| 10/10 [04:35<00:00, 27.59s/run]
+order: 6.000,gamma: 2.000,Val Loss: 0.6265, Test Accuracy: 0.848 ± 0.006, Duration: 26.356
+Test Accuracy: 0.848 ± 0.006,Test pre: 0.840 ± 0.010,Test recall: 0.837 ± 0.008,Test f1: 0.836 ± 0.007, Duration: 26.356
