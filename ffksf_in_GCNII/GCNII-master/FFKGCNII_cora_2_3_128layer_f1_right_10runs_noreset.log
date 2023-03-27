@@ -1,0 +1,40 @@
+nohup: ignoring input
+[1. 1. 1. 1.]
+[8. 4. 2. 1.]
+0
+1
+cuda:1
+cuda:1 pretrained/7d1b5b3c48bf4b2ea24d713e931a126f.pt
+Train cost: 461.4856s
+Load 671th epoch
+Test acc.:86.3
+Train cost: 92.4104s
+Load 51th epoch
+Test acc.:85.8
+Train cost: 186.6466s
+Load 205th epoch
+Test acc.:85.7
+Train cost: 65.4878s
+Load 6th epoch
+Test acc.:85.6
+Train cost: 80.3135s
+Load 31th epoch
+Test acc.:85.6
+Train cost: 65.7847s
+Load 7th epoch
+Test acc.:86.0
+Train cost: 130.0415s
+Load 113th epoch
+Test acc.:86.2
+Train cost: 99.8240s
+Load 63th epoch
+Test acc.:85.9
+Train cost: 61.4264s
+Load 0th epoch
+Test acc.:85.4
+Train cost: 151.1992s
+Load 146th epoch
+Test acc.:86.5
+0.859
+0.003316624790355403
+Test Accuracy: 0.859 ± 0.003,Test pre: 0.844 ± 0.005,Test recall: 0.845 ± 0.007,Test f1: 0.843 ± 0.004
