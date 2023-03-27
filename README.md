@@ -27,7 +27,7 @@ Please enter the file where the model you prefer and follow the instructions bel
 
 FFK-DAGNN or FFK-GCN:   (file: ffksf_in_DAGNN_and_GCN)
 
-```python dagnn.py --dataset=physics --weight_decay=5e-4 --epochs 200 --early_stopping 100 --hidden 64 --gamma 5 --k 3 --cuda 2 --dropout 0.5 --runs 100```
+```python dagnn.py --dataset=physics --weight_decay=0 --K=5 --dropout=0.8  --gamma 5 --k 3 --cuda 2 --runs 100```
 
 FFK-HGCN or FFK-GCN:    (file: ffksf_in_HGCN_and_GCN)
 
