@@ -1,0 +1,35 @@
+nohup: ignoring input
+using tuned weight decay: 8.577148652758358e-05
+Namespace(cuda=True, dataset='citeseer', degree=5, dropout=0, epochs=150, experiment='base-experiment', feature='mul', hidden=0, lr=0.2, model='SGC', no_cuda=False, normalization='AugNormAdj', per=-1, seed=42, tuned=True, weight_decay=8.577148652758358e-05)
+[1. 1. 1. 1. 1. 1. 1. 1.]
+[128.  64.  32.  16.   8.   4.   2.   1.]
+0
+1
+2
+3
+4
+5
+/home/zzy/SGC-master/normalization.py:57: RuntimeWarning: divide by zero encountered in power
+  r_inv = np.power(rowsum, -1).flatten()
+0.6170s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7290
+Pre-compute time: 0.6170s, train time: 0.2690s, total: 0.8860s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0884s, total: 0.7054s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0960s, total: 0.7130s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.1362s, total: 0.7532s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0846s, total: 0.7017s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0804s, total: 0.6974s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0833s, total: 0.7003s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0927s, total: 0.7097s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0995s, total: 0.7166s
+Validation Accuracy: 0.7320 Test Accuracy: 0.7300
+Pre-compute time: 0.6170s, train time: 0.0930s, total: 0.7101s
+Test Accuracy: 0.730 ± 0.000,Test pre: 0.691 ± 0.001,Test recall: 0.695 ± 0.001,Test f1: 0.690 ± 0.001
