@@ -31,7 +31,7 @@ FFK-DAGNN or FFK-GCN:   (file: ffksf_in_DAGNN_and_GCN)
 
 FFK-HGCN or FFK-GCN:    (file: ffksf_in_HGCN_and_GCN)
 
-```python -u train.py --task nc --dataset airport --model FFKGCN --lr 0.01 --act relu --bias 1 --dropout 0 --weight-decay 0 --manifold Euclidean --log-freq 5 --cuda 2 --dim 256 --num-layers 4```
+```python train.py --task nc --dataset airport --model FFKGCN --lr 0.01 --act relu --bias 1 --dropout 0 --weight-decay 0 --manifold Euclidean --log-freq 5 --cuda 2 --dim 256 --num-layers 4```
 
 FFK-GCNII:              (file: ffksf_in_GCNII)
 
