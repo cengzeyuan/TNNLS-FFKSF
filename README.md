@@ -61,4 +61,4 @@ If you find this code useful or this article useful, please cite the following p
 
 ## 6. Lack
 
-Limited by the size of file in github, we did not upload all the pretrained files of FFK-GCNII. If it is interesing for you, please do not hesitate to contact us.
+Limited by the size of files in github, we did not upload all the pretrained files of FFK-GCNII. If it is interesing for you, please do not hesitate to contact us.
