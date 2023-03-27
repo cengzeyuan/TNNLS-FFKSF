@@ -21,8 +21,6 @@ Thank you for reading this far.
 
 Models built based on different libraries may have different performance. Therefore, we use the models the authors release. We retain the requirement part in the original README.md file of each project to help the readers get the corresponding requirements more convenient.
 
-Limited by the size of file in github, we did not upload all the pretrained files of FFK-GCNII.
-
 ## 3. Examples
 
 Please enter the file where the model you prefer and follow the instructions below:
@@ -56,4 +54,9 @@ Thanks very much for the following implementation:
 [4] GCNII: https://github.com/chennnM/GCNII
 
 ## 5. Citation
+
 If you find this code useful or this article useful, please cite the following paper:
+
+## 6. Hiatus
+
+Limited by the size of file in github, we did not upload all the pretrained files of FFK-GCNII. If it is interesing for you, please do not hesitate to contact us.
