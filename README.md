@@ -45,6 +45,8 @@ FFK-SGC:                (file: ffksf_in_SGC)
 
 ## 4. The Codes of Original Models
 
+Thanks very much for the following implementation:
+
 [1] HGCN: https://github.com/HazyResearch/hgcn
 
 [2] SGC: https://github.com/Tiiiger/SGC
