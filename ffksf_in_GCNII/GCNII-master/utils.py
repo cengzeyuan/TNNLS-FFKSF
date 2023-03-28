@@ -132,27 +132,3 @@ def load_citation(dataset_str, K, gamma):
     adj = ffk_normalized_adjacency(adj, K, gamma)
     adj = sparse_mx_to_torch_sparse_tensor(adj)
     return adj, features, labels, idx_train, idx_val, idx_test
-
-
-# adapted from PetarV/GAT
-def run_dfs(adj, msk, u, ind, nb_nodes):
-    if msk[u] == -1:
-        msk[u] = ind
-        #for v in range(nb_nodes):
-        for v in adj[u,:].nonzero()[1]:
-            #if adj[u,v]== 1:
-            run_dfs(adj, msk, v, ind, nb_nodes)
-
-def dfs_split(adj):
-    # Assume adj is of shape [nb_nodes, nb_nodes]
-    nb_nodes = adj.shape[0]
-    ret = np.full(nb_nodes, -1, dtype=np.int32)
-
-    graph_id = 0
-
-    for i in range(nb_nodes):
-        if ret[i] == -1:
-            run_dfs(adj, ret, i, graph_id, nb_nodes)
-            graph_id += 1
-
-    return ret
