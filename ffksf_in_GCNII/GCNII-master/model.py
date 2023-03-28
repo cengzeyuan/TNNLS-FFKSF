@@ -72,40 +72,6 @@ class GCNII(nn.Module):
         layer_inner = self.fcs[-1](layer_inner)
         return F.log_softmax(layer_inner, dim=1)
 
-class GCNIIppi(nn.Module):
-    def __init__(self, nfeat, nlayers,nhidden, nclass, dropout, lamda, alpha,variant):
-        super(GCNIIppi, self).__init__()
-        self.convs = nn.ModuleList()
-        for _ in range(nlayers):
-            self.convs.append(GraphConvolution(nhidden, nhidden,variant=variant,residual=True))
-        self.fcs = nn.ModuleList()
-        self.fcs.append(nn.Linear(nfeat, nhidden))
-        self.fcs.append(nn.Linear(nhidden, nclass))
-        self.act_fn = nn.ReLU()
-        self.sig = nn.Sigmoid()
-        self.dropout = dropout
-        self.alpha = alpha
-        self.lamda = lamda
-
-    def reset_parameters(self):
-        for conv in self.convs:
-            conv.reset_parameters()
-        for lin in self.fcs:
-            lin.reset_parameters()
-
-    def forward(self, x, adj):
-        _layers = []
-        x = F.dropout(x, self.dropout, training=self.training)
-        layer_inner = self.act_fn(self.fcs[0](x))
-        _layers.append(layer_inner)
-        for i,con in enumerate(self.convs):
-            layer_inner = F.dropout(layer_inner, self.dropout, training=self.training)
-            layer_inner = self.act_fn(con(layer_inner,adj,_layers[0],self.lamda,self.alpha,i+1))
-        layer_inner = F.dropout(layer_inner, self.dropout, training=self.training)
-        layer_inner = self.sig(self.fcs[-1](layer_inner))
-        return layer_inner
-
-
 if __name__ == '__main__':
     pass
 
