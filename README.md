@@ -59,6 +59,6 @@ Thanks very much for the following implementations:
 
 If you find this code useful or this article useful, please cite the following paper:
 
-## 6. Lack
+## 6. Something Missing
 
 Limited by the size of files in github, we did not upload all the pretrained files of FFK-GCNII. If it is interesing for you, please do not hesitate to contact us.
