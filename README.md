@@ -11,7 +11,7 @@ Further, we demonstrate the generalized renormalization trick is scale-invariant
 
 Herein, we further complete this filter as a generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the ones the authors release, except for the following minor changes in DAGNN and GCNII. For DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick. For GCNII, we further complete the missing step of resetting parameters.
 
-There is still a little trouble in the implementation based on PyTorch Geometric. Due to the unique data form in PyTorch Geometric, we have to do a transformation such as the one in FFK-DAGNN, which takes a lot of time. If there is any method that can deal with it, please do not hesitate to contact us. However, if the implementation loads the dataset by itself, for instance GCNII, it is OK to directly apply this renormalization trick.
+There is still a little trouble in the implementation based on PyTorch Geometric. Due to the unique data form in PyTorch Geometric, we have to do a transformation such as the one in FFK-DAGNN, which takes a lot of time. If there is any method that can deal with it, please do not hesitate to contact us. However, if the implementation loads the dataset by itself, for instance, GCNII, it is OK to directly apply this renormalization trick.
 
 For more insights, (empirical and theoretical) analysis, and discussions, please refer to our paper.
 
@@ -21,7 +21,7 @@ Thank you for reading this far.
 
 ## 2. Requirement
 
-Models built based on different libraries may have different performance. Therefore, we use the models the authors release. We retain the requirement part in the original README.md file of each project to help the readers get the corresponding requirements more convenient.
+Models built based on different libraries may have different performances. Therefore, we use the models the authors release. We retain the requirement part in the original README.md file of each project to help the readers get the corresponding requirements more conveniently.
 
 ## 3. Examples
 
@@ -43,7 +43,7 @@ FFK-SGC:                (file: ffksf_in_SGC)
 
 ```python citation.py --dataset cora --tuned --gamma 2 --K 7```
 
-If you are interested with the detail settings of hyperparameters, please refer to our paper. For FFK-GCNII and FFK-DAGNN, we strictly follow the settings of hyperparameters of GCNII and DAGNN respectively. Thus, we retain the run.sh file and the semi.sh file in the original implementation of GCNII and DAGNN.
+If you are interested in the detailed settings of hyperparameters, please refer to our paper. For FFK-GCNII and FFK-DAGNN, we strictly follow the settings of hyperparameters of GCNII and DAGNN respectively. Thus, we retain the run.sh file and the semi.sh file in the original implementation of GCNII and DAGNN.
 
 ## 4. The Codes of Original Models
 
@@ -63,4 +63,4 @@ If you find this code useful or this article useful, please cite the following p
 
 ## 6. Something Missing
 
-Limited by the size of files in github, we did not upload all the pretrained files of FFK-GCNII. If it is interesing for you, please do not hesitate to contact us.
+Limited by the size of files in GitHub, we did not upload all the pretrained files of FFK-GCNII. If it is interesting for you, please do not hesitate to contact us.
