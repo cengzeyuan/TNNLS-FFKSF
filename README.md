@@ -11,7 +11,7 @@ Further, we demonstrate the generalized renormalization trick is scale-invariant
 
 Herein, we further complete this filter as a generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the ones the authors release, except for the following minor changes in DAGNN and GCNII. For DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick. For GCNII, we further complete the missing step of resetting parameters.
 
-There is still a little trouble in the implementation based on PyTorch Geometric. Due to the unique data form in PyTorch Geometric, we have to do a transformation such as the one in FFK-DAGNN, which takes a lot of time. If there is any method that can deal with it, please do not hesitate to contact us. However, if the implementation load the dataset by itself, for instance GCNII, it is OK to directly apply this renormalization trick.
+There is still a little trouble in the implementation based on PyTorch Geometric. Due to the unique data form in PyTorch Geometric, we have to do a transformation such as the one in FFK-DAGNN, which takes a lot of time. If there is any method that can deal with it, please do not hesitate to contact us. However, if the implementation loads the dataset by itself, for instance GCNII, it is OK to directly apply this renormalization trick.
 
 For more insights, (empirical and theoretical) analysis, and discussions, please refer to our paper.
 
