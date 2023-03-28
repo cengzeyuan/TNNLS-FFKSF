@@ -15,6 +15,8 @@ There is still a little trouble in the implementation based on PyTorch Geometric
 
 For more insights, (empirical and theoretical) analysis, and discussions, please refer to our paper.
 
+Note that the implementation of the renormalization trick is not in the model.py file.
+
 Thank you for reading this far.
 
 ## 2. Requirement
