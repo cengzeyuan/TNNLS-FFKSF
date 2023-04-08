@@ -9,7 +9,7 @@ It’s commonly believed that deep graph neural networks will be over-smoothing 
 
 Furthermore, we demonstrate the generalized renormalization trick is scale-invariant and propose a reversible transformation for the domain of polynomial coefficients. With a forgetting factor, the optimization of coefficients is transformed to the tuning of a hyperparameter and a novel spectral filter is designed, working as a superior substitution of the popular 1st-order Chebyshev filter.
 
-We further complete this filter as a generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the codes publicly relseased, except for the following minor changes in DAGNN and GCNII: for DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick; For GCNII, we further complete the missing step of resetting parameters.
+We further complete this filter as a specific generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the codes publicly relseased, except for the following minor changes in DAGNN and GCNII: for DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick; For GCNII, we further complete the missing step of resetting parameters.
 
 One aspect still needs improving in the implementation based on PyTorch Geometric. Due to the unique data form of adjacency matrices in PyTorch Geometric, it takes a lot of time to do the data transformation as in FFK-DAGNN. We would really appreciate any method proposed to deal with this inefficiency. However, if the dataset is loaded manually, for instance, GCNII, it is advisable to directly apply this renormalization trick.
 
