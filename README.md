@@ -3,15 +3,15 @@
 
 ## 1. Overview
 
-This is an implementation of "Graph Neural Networks with High-Order Polynomial Spectral Filters". We implement a superior substitution of the popular 1st-order Chebyshev filter herein.
+This is an implementation of "Graph Neural Networks with High-Order Polynomial Spectral Filters", a superior substitution of the popular 1st-order Chebyshev filter.
 
-There is a mainstream view that deep graph neural networks tend to be over-smoothing resulting from the Laplacian smoothing. However, in this article, we demonstrate that graph neural networks with residual connections or with high-order polynomial spectral filters could be kept from performance degradation with the extension of the receptive fields.
+It’s commonly believed that deep graph neural networks will be over-smoothing resulting from the Laplacian smoothing. However, we demonstrate that graph neural networks with residual connections or with high-order polynomial spectral filters could be kept from performance degradation with the extension of the receptive fields.
 
-Further, we demonstrate the generalized renormalization trick is scale-invariant and propose a reversible transformation for the domain of polynomial coefficients. Afterward, the optimization of coefficients is transformed to the tuning of a hyperparameter and a novel spectral filter is designed, working as a superior substitution of the popular 1st-order Chebyshev filter.
+Furthermore, we demonstrate the generalized renormalization trick is scale-invariant and propose a reversible transformation for the domain of polynomial coefficients. With a forgetting factor, the optimization of coefficients is transformed to the tuning of a hyperparameter and a novel spectral filter is designed, working as a superior substitution of the popular 1st-order Chebyshev filter.
 
-Herein, we further complete this filter as a generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the ones the authors release, except for the following minor changes in DAGNN and GCNII. For DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick. For GCNII, we further complete the missing step of resetting parameters.
+We further complete this filter as a generalized renormalization trick and apply it to five models, namely GCN, SGC, GCNII, DAGNN and HGCN. These models are implemented according to the codes publicly relseased, except for the following minor changes in DAGNN and GCNII: for DAGNN, we set \gamma = 1 and K = 1 in the generalized renormalization trick; For GCNII, we further complete the missing step of resetting parameters.
 
-There is still a little trouble in the implementation based on PyTorch Geometric. Due to the unique data form in PyTorch Geometric, we have to do a transformation such as the one in FFK-DAGNN, which takes a lot of time. If there is any method that can deal with it, please do not hesitate to contact us. However, if the implementation loads the dataset by itself, for instance, GCNII, it is OK to directly apply this renormalization trick.
+One aspect still needs improving in the implementation based on PyTorch Geometric. Due to the unique data form of adjacency matrices in PyTorch Geometric, it takes a lot of time to do the data transformation as in FFK-DAGNN. We would really appreciate any method proposed to deal with this inefficiency. However, if the dataset is loaded manually, for instance, GCNII, it is advisable to directly apply this renormalization trick.
 
 For more insights, (empirical and theoretical) analysis, and discussions, please refer to our paper.
 
@@ -25,21 +25,21 @@ Models built based on different libraries may have different performances. There
 
 ## 3. Examples
 
-Please enter the file where the model you prefer and follow the instructions below:
+Please enter the directory based on the model to your interest and follow the instructions below:
 
-FFK-DAGNN or FFK-GCN:   (file: ffksf_in_DAGNN_and_GCN)
+FFK-DAGNN or FFK-GCN:   (directory: ffksf_in_DAGNN_and_GCN)
 
 ```python dagnn.py --dataset=physics --weight_decay=0 --K=5 --dropout=0.8  --gamma 5 --k 3 --cuda 2 --runs 100```
 
-FFK-HGCN or FFK-GCN:    (file: ffksf_in_HGCN_and_GCN)
+FFK-HGCN or FFK-GCN:    (directory: ffksf_in_HGCN_and_GCN)
 
 ```python train.py --task nc --dataset airport --model FFKGCN --lr 0.01 --act relu --bias 1 --dropout 0 --weight-decay 0 --manifold Euclidean --log-freq 5 --cuda 2 --dim 256 --num-layers 4```
 
-FFK-GCNII:              (file: ffksf_in_GCNII)
+FFK-GCNII:              (directory: ffksf_in_GCNII)
 
 ```python train.py --data cora --layer 128 --gamma 3 --K 6 --dev 2```
 
-FFK-SGC:                (file: ffksf_in_SGC)
+FFK-SGC:                (directory: ffksf_in_SGC)
 
 ```python citation.py --dataset cora --tuned --gamma 2 --K 7```
 
@@ -63,4 +63,4 @@ If you find this code useful or this article useful, please cite the following p
 
 ## 6. Something Missing
 
-Limited by the size of files in GitHub, we did not upload all the pretrained files of FFK-GCNII. If it is interesting for you, please do not hesitate to contact us.
+Limited by the size of files in GitHub, we did not upload all the pretrained files of FFK-GCNII. If you are interested in it, please do not hesitate to contact us.
