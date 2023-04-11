@@ -60,6 +60,7 @@ Thanks very much for the following implementations:
 ## 5. Citation
 
 If you find this code useful or this article useful, please cite the following paper:
+```
 @ARTICLE{10098821,
   author={Zeng, Zeyuan and Peng, Qinke and Mou, Xu and Wang, Ying and Li, Ruimeng},
   journal={IEEE Transactions on Neural Networks and Learning Systems}, 
@@ -69,7 +70,7 @@ If you find this code useful or this article useful, please cite the following p
   number={},
   pages={1-14},
   doi={10.1109/TNNLS.2023.3263676}}
-
+```
 ## 6. Something Missing
 
 Limited by the size of files in GitHub, we did not upload all the pretrained files of FFK-GCNII. If you are interested in it, please do not hesitate to contact us.
