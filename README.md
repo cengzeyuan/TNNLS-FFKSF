@@ -60,6 +60,15 @@ Thanks very much for the following implementations:
 ## 5. Citation
 
 If you find this code useful or this article useful, please cite the following paper:
+@ARTICLE{10098821,
+  author={Zeng, Zeyuan and Peng, Qinke and Mou, Xu and Wang, Ying and Li, Ruimeng},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Graph Neural Networks With High-Order Polynomial Spectral Filters}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-14},
+  doi={10.1109/TNNLS.2023.3263676}}
 
 ## 6. Something Missing
 
