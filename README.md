@@ -3,7 +3,7 @@
 
 ## 1. Overview
 
-This is an implementation of "Graph Neural Networks with High-Order Polynomial Spectral Filters", a superior substitution of the popular 1st-order Chebyshev filter.
+This is an implementation of "Graph Neural Networks with High-Order Polynomial Spectral Filters" [(link)](https://ieeexplore.ieee.org/document/10098821), a superior substitution of the popular 1st-order Chebyshev filter.
 
 It’s commonly believed that deep graph neural networks will be over-smoothing resulting from the Laplacian smoothing. However, we demonstrate that graph neural networks with residual connections or with high-order polynomial spectral filters could be kept from performance degradation with the extension of the receptive fields.
 
