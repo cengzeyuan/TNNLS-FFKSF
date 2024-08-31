@@ -58,7 +58,7 @@ def ffk_normalized_adjacency(adj, k, gamma):
    return d_mat_inv_sqrt.dot(k_adj).dot(d_mat_inv_sqrt).tocoo()
 ```
 
-Due to the unique data form of adjacency matrices in PyTorch Geometric, it should takes a lot of time to do the data transformation. Here is an example.
+Due to the unique data form of adjacency matrices in PyTorch Geometric, it should take a lot of time to do the data transformation. We would really appreciate any method proposed to deal with this inefficiency. Here is an example.
 ```
 def ffkgcn_preprocess_adj(adj, k, gamma):
     """Preprocessing of adjacency matrix for simple GCN model and conversion to tuple representation."""
